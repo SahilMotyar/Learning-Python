@@ -1,4 +1,4 @@
-x = 34
-y = 24
+x = int(input("Give an integer: "))
+y = int(input("Give an integer: "))
 z = x + y
-print(z)
+print("Sum of the integers: " + str(z))
