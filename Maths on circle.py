@@ -11,7 +11,7 @@ if  ask == "Yes" or "yes" or "Y" or "y":
 if  ask == "No" or "no" or "n" or "N":
     diameter = float(input("Enter the diameter of the circle: "))
     circumference_diameter = math.pi*diameter
-    print(round(circumference_diameter, 2)) '''
+    print(round(circumference_diameter, 2)) 
 
 
 ask = input("Do you know radius? (Yes or No): ")
@@ -27,3 +27,11 @@ if  ask in ["No", "no", "N", "n"]:
     area_diameter = math.pi*(diameter/2)**2
     print(f"The area of the circle is: {round(area_diameter, 2)}")
 
+'''
+
+a = float(input("Enter perpedicular of a right angled triangle: "))
+b = float(input("Enter base of a right angled triangle: "))
+
+c = round(math.sqrt(pow(a,2) + pow(b,2)), 3)
+
+print(f"The hypotenuse of right angled triangle is: {c}")
