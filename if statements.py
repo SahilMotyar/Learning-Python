@@ -13,7 +13,7 @@ else:
 
 #asking user their name and checking if they entered or not    
 
-name = input("Enter your name: ")
+name = input("Enter your name: ").strip()
 
 if name == "":
     print("You did not enter your name!")
