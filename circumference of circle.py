@@ -1,10 +1,14 @@
 import math
 
-radius = int(input("Enter a radius of a circle: "))
-diameter = int(input("Enter the diameter of the circle: "))
+ask = input("Do you know radius? (Yes or No): ")
+
+if  ask == "Yes" or "yes" or "Y" or "y":
+    radius = int(input("Enter a radius of a circle: "))
+    circumference_radius = 2*math.pi*radius
+    print(circumference_radius)
 
 
-circumference_radius = 2*math.pi*radius
-circumference_diameter = math.pi*diameter
-print(circumference_radius)
-print(circumference_diameter)
+if  ask == "No" or "no" or "n" or "N":
+    diameter = int(input("Enter the diameter of the circle: "))
+    circumference_diameter = math.pi*diameter
+    print(circumference_diameter)
