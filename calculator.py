@@ -1,8 +1,8 @@
 #basic calculator using if statements and basic maths
 
 operator = input("Enter an operator (+ - * / ** %): ")
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
 if operator == "+":
     add = num1 + num2
