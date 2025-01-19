@@ -1,0 +1,39 @@
+'''logical operator = evaluate multiple conditions (or, and not)
+                    or = atleast one condition must be True
+                    and = both conditions must be True
+                    not = inverts the condition (not False, not True) '''
+
+temp = float(input("What is the temperature in celsius: "))
+is_raining = False
+
+if temp > 35 or temp < 0 or is_raining:
+    print("You should not go out.")
+else:
+    print("You can go out.")
+
+temp = float(input("What is the temperature in celsius: "))
+is_sunny = True
+
+if temp >= 30 and is_sunny:
+    print("It is hot outside.")
+    print("It is sunny outside")
+
+elif temp <= 0 and is_sunny:
+    print("It is Cold outside")
+    print("It is sunny outside")
+
+elif 28 > temp > 0 and is_sunny:
+    print("It is warm outside")
+    print("It is sunny outside")
+
+elif temp >= 30 and not is_sunny:
+    print("It is hot outside.")
+    print("It is cloudy")
+
+elif temp <= 0 and not is_sunny:
+    print("It is Cold outside")
+    print("It is cloudy")
+
+elif 28 > temp > 0 and not is_sunny:
+    print("It is warm outside")
+    print("It is cloudy")
