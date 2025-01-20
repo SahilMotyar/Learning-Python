@@ -13,6 +13,11 @@ print(last_name)
 print(funky_name)
 print(reversed_name)
 
+#getting the last digits from a string
+
+credit_number = "1234-5678-9012-3456"
+last_digits = credit_number[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digits}")
 
 #slicing
 
